@@ -1,4 +1,3 @@
-/* src/App.js */
 import "./App.css";
 import { useState } from "react";
 import { create } from "ipfs-http-client";
@@ -27,13 +26,12 @@ const App = () => {
   return (
     <div className="App">
       <h1>IPFS Example</h1>
-      {!loadingState ? (
-        <input type="file" onChange={onChange} />
-      ) : (
-        <p>Loading please wait...</p>
-      )}
-      
-
+        {!loadingState ? (
+          <input type="file" onChange={onChange} />
+        ) : (
+          <p>Loading please wait...</p>
+        )}
+        
         {fileUrl && (
           <div className="my-5">
             <h1>path : {`${ipfsFilePath}`}</h1>
