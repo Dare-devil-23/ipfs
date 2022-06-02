@@ -7,7 +7,8 @@ module.exports = {
      network_id: "*",       // Any network (default: none)
     },
   },
-
+  contracts_directory: './contracts/',
+  contracts_build_directory: './build/contracts',
   compilers: {
     solc: {
        optimizer: {
